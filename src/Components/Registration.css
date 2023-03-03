@@ -1,0 +1,23 @@
+.registration-comp {
+    @apply flex flex-row h-[100vh] w-[100vw] bg-gradient-to-b from-[white] to-[#d9ebd9]
+}
+
+.image2 {
+    @apply w-[50%] h-[100%]
+}
+
+.forms {
+    @apply flex pt-[1rem] flex-col pl-[3rem] justify-center items-center
+ }
+
+.form-dept {
+    @apply w-[50%] h-[100vh] pt-[2rem]  pl-[1.5rem] 
+}
+
+.back{
+    @apply text-[#3e413e] text-[1.4rem] flex flex-row
+}
+
+@media screen and (max-width: 1024px) {
+    /* Styles for laptops with a maximum width of 1024px */
+  }

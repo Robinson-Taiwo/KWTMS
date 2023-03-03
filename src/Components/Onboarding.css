@@ -1,4 +1,132 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
 @media (max-width: 767px) {
 
-    
+
+    .all {
+        @apply bg-[green] ml-[0rem]
+    }
+
+
+    .picture {
+        @apply w-[59.9%] h-[100%] hidden
+    }
+
+
+    .form-section {
+        @apply w-[100%] ml-[0rem]
+    }
+
+    #Onboard-head {
+        @apply leading-[1.46rem] w-[20rem] text-[3rem]
+    }
+
+    .form-paragraph {
+        @apply text-[1.4rem] leading-[1.85rem] font-normal mb-[4rem] bg-[green] w-[20rem]
+    }
+
+
+}
+
+
+.all {
+    @apply w-[100vw] h-[100vh] bg-white flex flex-row
+}
+
+
+.picture {
+    @apply w-[59.9%] h-[100%]
+}
+
+
+.form-section {
+    @apply w-[40.1%] h-[100vh] ml-[5.77rem] flex flex-col justify-center items-center
+}
+
+.form-header {
+    @apply leading-[3.46rem] font-medium text-[4rem] text-myGreen mb-[1rem]
+}
+
+.hidden {
+    display: none;
+    @apply bg-white flex flex-col
+}
+
+.form-paragraph {
+    @apply text-[1.6rem] text-[grey] leading-[1.85rem] font-normal mb-[4rem]
+}
+
+.form-button {
+    background: #F5F9FF;
+    border: 0.07rem solid #ffffff;
+    box-shadow: 0rem 1.09rem 1rem 0.09rem rgba(0, 0, 0, 0.04);
+    border-radius: 0.43rem;
+    @apply flex flex-row w-[30.43rem] h-[7.71rem] gap-[2rem] pt-[2.86rem] pl-[2.07rem] mb-[1.78rem]
+}
+
+.btn-container {
+    @apply flex flex-row gap-[0.38rem] h-[4.8rem]
+}
+
+
+.icons{
+    @apply h-[4rem] 
+}
+
+.btn-head {
+    @apply font-medium leading-[1.36rem] text-[1.14rem] text-[black]
+}
+
+.btn-text {
+    @apply leading-[1.21rem] text-[1rem] font-normal text-[#8692A6] flex flex-row gap-[0.27rem]
+}
+
+.form-button:hover {
+    background: #F5F9FF;
+    border: 0.07rem solid #15d835;
+    box-shadow: 0rem 0.29rem 1rem 0.07rem rgba(0, 0, 0, 0.04);
+    border-radius: 0.43rem;
+}
+
+/* .form-button:focus {
+    background: #F5F9FF;
+    border: 0.07rem solid #15d835;
+    box-shadow: 0rem 0.29rem 1rem 0.07rem rgba(0, 0, 0, 0.04);
+    border-radius: 0.43rem;
+} */
+
+.buts {
+    background: #e0fce6;
+    border: 0.07rem solid #ffffff;
+    box-shadow: 0rem 1.09rem 1rem 0.09rem rgba(0, 0, 0, 0.04);
+    border-radius: 0.43rem;
+    @apply w-[30.43rem] h-[9.71rem] flex flex-row gap-[2rem] pt-[1.86rem] pl-[1.07rem] mb-[1.78rem] justify-center items-center text-[2rem] text-[#76b868]
+}
+
+
+.links {
+    @apply h-[100%] w-[100%] flex justify-between gap-[1rem] items-center flex-row  pr-[4rem] pl-[2rem] pb-[2rem]
+}
+
+.buts:hover {
+    background: #F5F9FF;
+    border: 0.07rem solid #15d835;
+    box-shadow: 0rem 0.29rem 1rem 0.07rem rgba(0, 0, 0, 0.04);
+    border-radius: 0.43rem;
+}
+
+.onboard-desc{
+    @apply text-[1rem] flex justify-center
+}
+
+.onboard-second{
+    @apply flex flex-col
+}
+
+.big{
+    @apply flex items-center justify-center
 }

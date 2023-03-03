@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.unit-reg {
+    @apply flex justify-center flex-col mt-[9rem]
+}
+
+
+
+.unit-form {
+    @apply flex flex-col w-[33.15rem]
+}
+
+.unit-head {
+    @apply text-tt font-medium leading-[3.46rem] mb-[1.49rem] text-[#89db75]
+}
+
+.label {
+    @apply mb-[0.5rem]
+}
+
+.unit-desc {
+    @apply text-[1.43rem] w-[100%] flex-wrap leading-[1.85rem] font-normal text-[#99bba3]
+}
+
+.unit-top {
+    @apply mb-[1rem]
+}
+
+.unit-line {
+    border: 0.08rem solid #F5F5F5;
+
+    @apply w-[32.85rem] mb-[0.5rem]
+}
+
+.unit-reg-form {
+    @apply flex flex-col gap-[1.45rem] w-[33.15rem]
+}
+
+.unit-input {
+    border: 0.07rem solid #86a693;
+    @apply w-[100%] h-[4rem] rounded-[1rem] pl-[2rem]
+}
+
+.unit-input:focus {
+    outline: none;
+}
+
+.unit-label {
+    @apply text-[1.23rem] leading-[1.46rem]
+}
+
+.unit-button {
+    border-radius: 0.43rem;
+
+    @apply w-[100%] h-[4rem] bg-green-400 text-[white] text-[1.5rem]
+}
+
+.unit-button:hover {
+    box-shadow: 0rem 0.29rem 0.71rem 0.21rem rgba(0, 0, 0, 0.11);
+    @apply bg-[#0b6b0b]
+}
+
+.unit-button:hover:not(:disabled) {
+    box-shadow: 0rem 0.29rem 0.71rem 0.21rem rgba(0, 0, 0, 0.11);
+    @apply bg-[#0b6b0b];
+}
+
+.unit-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.unit-cont {
+    @apply w-[100%]
+}
+
+@media screen and (max-width: 1024px) {}
