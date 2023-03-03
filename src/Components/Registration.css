@@ -29,7 +29,7 @@
     }
 
     .registration-comp {
-        @apply flex flex-col h-auto w-[100vw] bg-gradient-to-b from-[white] to-[#d9ebd9]
+        @apply flex flex-col h-auto w-[100vw] bg-gradient-to-b from-[white] to-[#b4e7b4]
     }
 
     .forms {
