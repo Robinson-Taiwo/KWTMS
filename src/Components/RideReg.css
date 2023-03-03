@@ -132,7 +132,7 @@
     .ride-button {
         border-radius: 0.43rem;
 
-        @apply w-[20rem] h-[3rem] bg-green-400 text-[white] text-[1.5rem] mt-[0.5rem] mb-[2rem ]
+        @apply w-[20rem] h-[3rem] bg-green-400 text-[white] text-[1.5rem] mt-[0.5rem] mb-[2rem]
     }
 
     .ride-button:hover {
