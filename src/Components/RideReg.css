@@ -78,4 +78,80 @@
     @apply w-[100%]
 }
 
-@media screen and (max-width: 1024px) {}
+@media (max-width: 767px) {
+
+    .ride-reg {
+        @apply flex flex-col justify-center items-center
+    }
+
+
+
+    .ride-form {
+        @apply flex flex-col w-[100%] justify-center items-center  ml-[0rem]
+    }
+
+    .ride-head {
+        @apply text-tt font-medium leading-[3.46rem] mb-[1.49rem] text-[#89db75] flex justify-center
+    }
+
+    .label {
+        @apply mb-[0.5rem]
+    }
+
+    .ride-desc {
+        @apply text-[1.43rem] w-[29rem] flex-wrap leading-[1.85rem] font-normal text-[#99bba3] text-center
+    }
+
+    .ride-top {
+        @apply mb-[1rem]
+    }
+
+    .ride-line {
+        border: 0.08rem solid #F5F5F5;
+
+        @apply w-[28.85rem] mb-[0.5rem]
+    }
+
+    .ride-reg-form {
+        @apply flex flex-col gap-[1.45rem] w-[28rem]
+    }
+
+    .input {
+        border: 0.07rem solid #86a693;
+        @apply w-[28rem] h-[4rem] rounded-[1rem] pl-[2rem]
+    }
+
+    .input:focus {
+        outline: none;
+    }
+
+    .label {
+        @apply text-[1.23rem] leading-[1.46rem]
+    }
+
+    .ride-button {
+        border-radius: 0.43rem;
+
+        @apply w-[28rem] h-[4rem] bg-green-400 text-[white] text-[1.5rem]
+    }
+
+    .ride-button:hover {
+        box-shadow: 0rem 0.29rem 0.71rem 0.21rem rgba(0, 0, 0, 0.11);
+        @apply bg-[#0b6b0b]
+    }
+
+    .ride-button:hover:not(:disabled) {
+        box-shadow: 0rem 0.29rem 0.71rem 0.21rem rgba(0, 0, 0, 0.11);
+        @apply bg-[#0b6b0b];
+    }
+
+    .ride-button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    .cont {
+        @apply w-[100%]
+    }
+
+}

@@ -18,6 +18,21 @@
     @apply text-[#3e413e] text-[1.4rem] flex flex-row
 }
 
-@media screen and (max-width: 1024px) {
-    /* Styles for laptops with a maximum width of 1024px */
-  }
+@media (max-width: 767px) {
+
+    .image2{
+        @apply hidden
+    }
+
+    .form-dept {
+        @apply w-[100vw] h-[100vh] pt-[2rem]  pl-[0rem]  
+    }
+
+    .registration-comp {
+        @apply flex flex-col h-[100vh] w-[100vw] bg-gradient-to-b from-[white] to-[#d9ebd9]
+    }
+
+    .forms {
+        @apply flex pt-[1rem] flex-col pl-[0rem] justify-center items-center
+     }
+}
