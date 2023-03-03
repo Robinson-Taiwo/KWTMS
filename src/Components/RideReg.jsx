@@ -112,7 +112,7 @@ const RideReg = () => {
                     </div>
 
                     <div className="cont">
-                        <p className="label">Chases name*</p>
+                        <p className="label">Chases number*</p>
                         <input value={chasesNumber} required onChange={handleChases} placeholder='E.g 4JJDU83' type="text" className="input" />
                     </div>
 
