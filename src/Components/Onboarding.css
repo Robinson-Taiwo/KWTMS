@@ -169,23 +169,27 @@
     @apply flex items-center justify-center
 }
 
+
+/* handling mobile responsiveness over here */
+
 @media (max-width: 767px) {
     .all {
-        @apply  flex-col w-[100vw] h-[100vh]
+        @apply flex-col w-[100vw] h-[100vh] bg-gradient-to-b from-[white] to-[#b4e7b4]
+    
     }
 
-.picture{
-display: none;
-    /* @apply  */
-}
+    .picture {
+        display: none;
+        /* @apply  */
+    }
 
 }
 
-.form-header{
+.form-header {
     @apply text-[2rem]
 }
 
-.form-section{
+.form-section {
     @apply w-[100vw] h-[100vh] ml-[0rem]
 }
 
@@ -201,8 +205,8 @@ display: none;
     @apply h-[2rem]
 }
 
-.onboard-desc{
-    @apply  text-[0.9rem] text-center
+.onboard-desc {
+    @apply text-[0.9rem] text-center
 }
 
 .big {
@@ -214,5 +218,5 @@ display: none;
 }
 
 .links {
-    @apply h-[100%] w-[100%] flex justify-between gap-[1rem] items-center flex-row pr-[2rem] pl-[0rem] pb-[0rem] ml-[1rem] 
+    @apply h-[100%] w-[100%] flex justify-between gap-[1rem] items-center flex-row pr-[2rem] pl-[0rem] pb-[0rem] ml-[1rem]
 }

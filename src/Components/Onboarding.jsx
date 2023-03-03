@@ -64,7 +64,7 @@ const Onboarding = () => {
                         <div className="onboard-second">
                             <h1 className='big'> Ride/Rider</h1>
 
-                            <p className="onboard-desc">Register yourself and your ride at a goal</p>
+                            <p className="onboard-desc">Register yourself and your ride</p>
 
                         </div>
                     </Link>

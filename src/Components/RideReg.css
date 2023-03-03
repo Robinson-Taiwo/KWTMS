@@ -5,7 +5,7 @@
 }
 
 .ride-reg {
-    @apply flex flex-row h-[100vh]
+    @apply flex flex-row h-[100%]
 }
 
 
