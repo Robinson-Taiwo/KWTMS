@@ -85,7 +85,7 @@
 @media (max-width: 767px) {
 
     .unit-reg {
-        @apply flex flex-col justify-center items-center mt-[2rem] h-[100vh]
+        @apply flex flex-col justify-center  mt-[0rem] h-[100vh]
     }
 
 
