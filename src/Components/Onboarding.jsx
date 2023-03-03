@@ -87,9 +87,7 @@ const Onboarding = () => {
 
 
 
-                {/* <div className="hidden">
-                    <Registration data={isRegisteringRide} data2={isRegisteringRider} />
-                </div> */}
+                
             </div>
 
 
