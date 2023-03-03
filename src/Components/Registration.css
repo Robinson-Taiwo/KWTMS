@@ -25,11 +25,11 @@
     }
 
     .form-dept {
-        @apply w-[100vw] h-[100vh] pt-[2rem]  pl-[0rem]  
+        @apply w-[100vw] h-auto pt-[2rem]  pl-[0rem]  
     }
 
     .registration-comp {
-        @apply flex flex-col h-[100vh] w-[100vw] bg-gradient-to-b from-[white] to-[#d9ebd9]
+        @apply flex flex-col h-auto w-[100vw] bg-gradient-to-b from-[white] to-[#d9ebd9]
     }
 
     .forms {
