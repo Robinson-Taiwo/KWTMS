@@ -1,35 +1,58 @@
-import React from 'react'
-import { useSelector } from 'react-redux';
-import image from "../assets/image.png"
-import back from "../assets/back.svg"
-import RideReg from './RideReg';
-import UnitReg from './UnitReg';
+import React, { useEffect, useState } from 'react'
+import ima from "../assets/ima.jpg"
+import nav from "../assets/nav.svg"
+
+import Onboarding from './Onboarding';
+import RideReg from "./RideReg"
+import UnitReg from "./UnitReg"
 import "./Registration.css"
-import { Link } from 'react-router-dom';
 
-const Registration = ({ }) => {
 
-    const isRider = useSelector((state) => state.registration.rider);
+const Registration = () => {
+
+    // const [view, setView] = useState("ONBOARDING");
+
+    const [view, setView] = useState(() => {
+        const storedView = localStorage.getItem('view');
+        return storedView ? storedView : 'ONBOARDING';
+    });
+
+    useEffect(() => {
+        localStorage.setItem('view', view);
+    }, [view]);
+
+
+    const CurrentView = VIEWS[view];
+
     return (
         <div className='registration-comp'>
+            <img src={ima} alt="" className="image2" />
 
-            <img src={image} alt="" className="image2" />
+            <div className="form-dept">
 
-            <section className="form-dept">
+                <p onClick={() => setView("ONBOARDING")} className="back">
+                    <img src={nav} alt="" className="nav" />
+                    back
+                </p>
 
-                <Link className='back' to="/" >  <img src={back} alt="" /> Back</Link>
-
-                {/* render the appropriate form based on the value of isRider */}
-
-                <div className="forms">
-                    {isRider ? <RideReg /> : <UnitReg />}
+                <div className="current-view">
+                    <CurrentView setView={setView} />
 
                 </div>
 
-            </section>
+
+
+            </div>
+
 
         </div>
     )
+}
+
+const VIEWS = {
+    ONBOARDING: Onboarding,
+    RIDER_REG: RideReg,
+    UNIT_REG: UnitReg
 }
 
 export default Registration

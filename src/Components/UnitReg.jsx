@@ -18,6 +18,7 @@ const UnitReg = () => {
         const unitNumberValue = unitNumber.trim();
         const addressValue = address.trim();
 
+        // consoling the value only when the input elements are not empty
         if (unitNameValue && unitNumberValue && addressValue) {
             console.log(`UnitName: ${unitNameValue}`);
             console.log(`UnitNumber: ${unitNumberValue}`);
@@ -36,6 +37,7 @@ const UnitReg = () => {
         // Here you can store the data in a state management library like Redux, or send it to an API endpoint
     };
 
+    // defining onChange functions for the input elements
 
     const handleAddress = (e) => {
         e.preventDefault();
@@ -56,16 +58,21 @@ const UnitReg = () => {
         <div className='unit-reg' >
 
             <div className="unit-form">
-                <div className="unit-top">
+                <div data-aos="fade-right" data-aos-delay="50"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-in-out" className="unit-top">
                     <h1 className="unit-head">Register your Unit</h1>
                     <p className="unit-desc">
                         Please make sure to input correct informations
                     </p>
                 </div>
-
                 <div className="unit-line"></div>
 
-                <form className="unit-reg-form">
+                {/* form with the inputs element */}
+
+                <form data-aos="fade-left" data-aos-delay="50"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-in-out" className="unit-reg-form">
 
                     <div className="unit-cont">
                         <p className="unit-label"> Unit name*</p>
@@ -82,9 +89,7 @@ const UnitReg = () => {
                         <input value={address} required onChange={handleAddress} placeholder='E.g 723974008EG' type="num" className="unit-input" />
                     </div>
 
-
-
-
+                    {/* calling the handleSubmit function in the button and checking if the input elements are filled before activating button */}
 
                     <button disabled={!address || !unitNumber || !unitName} onClick={handleUnitSubmit} className="unit-button">
                         submit Data

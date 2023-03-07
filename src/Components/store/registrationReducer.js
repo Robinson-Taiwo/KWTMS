@@ -14,5 +14,6 @@ const registrationSlice = createSlice({
     }
 });
 
+// exporting reducers
 export const { setRider } = registrationSlice.actions;
 export default registrationSlice.reducer;

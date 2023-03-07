@@ -1,0 +1,254 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+
+    scroll-behavior: smooth
+}
+
+.home {
+    @apply w-[100vw]
+}
+
+.first-sect {
+    background: radial-gradient(30.56% 76.04% at 72.78% 14.44%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    @apply bg-center bg-cover bg-no-repeat h-[90vh] w-[100vw] px-[3rem] flex items-center flex-row justify-between
+}
+
+.first-sect1 {
+
+    @apply bg-center bg-cover bg-no-repeat h-[100vh] w-[100vw]
+}
+
+.navbar {
+    @apply h-[5rem] w-[100vw] bg-[#48b87a] flex flex-row items-center
+}
+
+.logo {
+    @apply h-[4rem] flex items-center pl-[4rem]
+}
+
+.logo-text {
+    font-size: 20px;
+    /* color: blue; */
+
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    @apply text-[3.3rem] h-[100%] items-center flex font-bold text-[#48b87a]
+}
+
+.big-header {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    @apply text-[4rem] leading-[5rem] text-[white] font-bold w-[65rem]
+}
+
+.section1 {
+    @apply w-[65rem]
+}
+
+strong {
+    @apply text-[#79bd79]
+}
+
+.main-texts {
+    @apply text-[2rem] leading-[1.2] w-[60.5rem] mt-[2rem] text-[#bee7be] pl-[4rem]
+}
+
+.glow-button {
+    background-color: green;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    width: 18rem;
+    height: 4rem;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 0 0 10px green;
+    transition: box-shadow 0.3s ease-in-out;
+    @apply flex justify-center items-center mt-[2rem] ml-[12rem]
+}
+
+.glow-button:hover {
+    box-shadow: 0 0 20px green;
+}
+
+
+
+.section2 {
+    @apply mr-[20rem]
+}
+
+.your-name {
+    border-radius: 50%;
+    @apply h-[20rem] w-[20rem]
+}
+
+.second-sect {
+    background: linear-gradient(135deg, #2ecc71, #2ecc71 50%, #fff 50%, #fff);
+
+    @apply h-[65vh] flex items-center justify-center flex-col flex
+}
+
+.second-sectT {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    @apply w-[60%] text-[2.5rem] leading-[4rem] font-medium
+}
+
+
+.sect2-h {
+    background: linear-gradient(to right, #ffffff, #619c7a) no-repeat;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @apply text-[4rem] leading-[5rem] mb-[2rem] font-bold
+}
+
+/* .layer2{
+    border-radius: 4%;
+    @apply bg-[white] h-[98%] w-[99%] 
+} */
+
+.third-sect {
+    background: linear-gradient(135deg, #fff, #fff 50%, #2ecc71 50%, #2ecc71);
+    @apply h-[50vh] flex flex-row justify-between px-[3rem]
+}
+
+.card {
+    box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 2rem;
+
+    @apply bg-[white] h-[25rem] w-[25rem] mt-[7rem] flex items-center flex-col justify-center gap-[2rem] p-[2rem]
+}
+
+.num {
+    @apply text-[4rem] leading-[4rem] font-bold text-[green]
+}
+
+.card-p {
+    @apply text-[1.7rem] leading-[3rem]
+}
+
+
+.fourth-sect{
+    @apply h-[100vh] bg-cover bg-center bg-no-repeat
+}
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+    first-sect {
+        background: radial-gradient(30.56% 76.04% at 72.78% 14.44%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+        @apply bg-center bg-cover bg-no-repeat h-[100%] w-[100%] flex items-start flex-col absolute
+    }
+
+
+    .navbar {
+        @apply h-[5rem] w-[100%] bg-[#48b87a] flex flex-row items-center
+    }
+
+    .logo {
+        @apply h-[4rem] flex items-center pl-[0rem]
+    }
+
+    .logo-text {
+        /* font-size: 20px; */
+        /* color: blue; */
+
+        text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+        @apply text-[1.3rem] h-[100%] items-center flex font-bold text-[#48b87a]
+    }
+
+    .big-header {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        @apply text-[2rem] text-center leading-[3rem] text-[white] font-bold w-[100%]
+    }
+
+    .section1 {
+        @apply w-[100%]
+    }
+
+    strong {
+        @apply text-[#79bd79]
+    }
+
+    .main-texts {
+        @apply text-[1.2rem] leading-[1.2rem] w-[100%] mt-[1rem] text-[#bee7be] pl-[0rem]
+    }
+
+    .glow-button {
+        background-color: green;
+        border: none;
+        color: #fff;
+        padding: 10px 20px;
+        width: 18rem;
+        height: 4rem;
+        border-radius: 5px;
+        font-size: 18px;
+        box-shadow: 0 0 10px green;
+        transition: box-shadow 0.3s ease-in-out;
+        @apply flex justify-center items-center mt-[2rem] ml-[0rem]
+    }
+
+    .glow-button:hover {
+        box-shadow: 0 0 20px green;
+    }
+
+
+
+    .section2 {
+        @apply mr-[20rem] hidden
+    }
+
+    .your-name {
+        border-radius: 50%;
+        @apply h-[20rem] w-[20rem]
+    }
+
+    .second-sect {
+        background: linear-gradient(135deg, #2ecc71, #2ecc71 50%, #fff 50%, #fff);
+
+        @apply h-auto pb-[2rem] px-[1rem] items-center justify-center flex-col flex text-center
+    }
+
+    .second-sectT {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        @apply w-[100%] text-[1.2rem] leading-[2rem] font-medium pb-[2rem]
+    }
+
+
+    .sect2-h {
+        background: linear-gradient(to right, #ffffff, #eaeeeb) no-repeat;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @apply text-[2rem] h-auto leading-[4rem] pb-[2rem] font-bold mt-[2rem]
+    }
+
+    /* .layer2{
+        border-radius: 4%;
+        @apply bg-[white] h-[98%] w-[99%] 
+    } */
+
+    .third-sect {
+        background: linear-gradient(135deg, #fff, #fff 50%, #2ecc71 50%, #2ecc71);
+        @apply h-auto flex flex-col items-center justify-between px-[2rem]
+    }
+
+    .card {
+        box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.25);
+        border-radius: 2rem;
+
+        @apply bg-[white] h-[18rem] w-[18rem] mt-[7rem] flex items-center flex-col justify-center gap-[2rem] p-[2rem]
+    }
+
+    .num {
+        @apply text-[4rem] pb-[1.5rem] leading-[2rem] pt-[1rem] font-bold text-[green]
+    }
+
+    .card-p {
+        @apply text-[1.7rem] leading-[1.7rem] text-center pb-[1rem]
+    }
+
+}

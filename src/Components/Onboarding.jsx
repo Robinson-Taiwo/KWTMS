@@ -1,64 +1,36 @@
-import React, { useState } from 'react'
-import image from "../assets/image.png"
+import React from 'react'
 import loc from "../assets/loc.svg"
 import acc from "../assets/acc.svg"
-import icon1 from "../assets/icon1.svg"
-
 import "./Onboarding.css"
-import RideReg from './RideReg'
-import UnitReg from './UnitReg'
-import { Link } from 'react-router-dom'
-import { useSelector, useDispatch } from 'react-redux';
-import { setRider } from "../Components/store/registrationReducer";
-
-import Registration from './Registration'
-
-const Onboarding = () => {
-
-    // const [registrationType, setRegistrationType] = useState("")
-    // const [registerUnit, setRegisterUnit] = useState(false)
-    // const [registerRide, setRegisterRide] = useState(false)
-    // const [onboarding, setOnboarding] = useState(true)
-    // const handleRegistrationType = (e) => {
-    //     setRegistrationType(e.target.value)
-    // }
-
-    const [isRegisteringRide, setIsRegisteringRide] = useState(true)
-    const [isRegisteringRider, setIsRegisteringRider] = useState(true)
-
-    const isRider = useSelector((state) => state.registration.rider);
-
-    // const SetRider = () => {
-    //     setIsRegisteringRide(false)
-    // }
-
-    // const SetRide = () => {
-    //     setIsRegisteringRide(true)
-    // }
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+AOS.init()
 
 
-    const dispatch = useDispatch();
-    function handleRiderClick() {
-        dispatch(setRider(false));
-    }
-
-
+const Onboarding = ({ setView }) => {
     return (
-        <div className='all'>
-
-
-            <img src={image} alt="" className="picture" />
+        <div className='onboard-screen'>
 
             <div className="form-section">
-                <h1 className="form-header">
+
+                <h1 data-aos="zoom-in-up" data-aos-delay="50"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-in-out" className="form-header">
                     Welcome to KWTMS
                 </h1>
-                <div className="form-paragraph">
+                <div data-aos="zoom-in-up" data-aos-delay="50"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-in-out" className="form-paragraph">
                     Tell us what are you Registering:
                 </div>
 
-                <div className="buts">
-                    <Link className='links' onClick={isRegisteringRider} to="/Registration/ride">
+
+
+
+                <button data-aos="fade-down" data-aos-delay="50"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-in-out" className='buts' onClick={() => setView("RIDER_REG")}>
+                    <div className="links">
                         <img src={loc} alt="" className="icons" />
 
                         <div className="onboard-second">
@@ -67,34 +39,43 @@ const Onboarding = () => {
                             <p className="onboard-desc">Register yourself and your ride</p>
 
                         </div>
-                    </Link>
-                </div>
+                    </div>
 
 
-                <div onClick={handleRiderClick} className="buts">
-                    <Link className='links' to="/Registration/unit">
-
+                </button>
+                <button data-aos="fade-up" data-aos-delay="50"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-in-out" className='buts' onClick={() => setView("UNIT_REG")}>
+                    <div className="links">
                         <img src={acc} alt="" className="icons" />
 
                         <div className="onboard-second">
                             <h1 className='big'> Transport Unit</h1>
 
-                            <p className="onboard-desc">Register your unit</p>
+                            <p className="onboard-desc">Register your unit here</p>
 
-                        </div></Link>
+                        </div>
+                    </div>
 
-                </div>
-
-
-
-                
+                </button>
             </div>
-
-
-
 
         </div>
     )
 }
 
 export default Onboarding
+
+
+
+
+
+
+
+
+
+
+
+
+
+

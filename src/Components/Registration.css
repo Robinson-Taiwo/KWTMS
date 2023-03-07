@@ -3,29 +3,41 @@
 }
 
 .image2 {
-    @apply w-[50%] h-[100%]
+    @apply w-[50%] h-[100%] rounded-r-[2rem]
 }
 
 .forms {
     @apply flex pt-[1rem] flex-col pl-[3rem] justify-center items-center
- }
-
-.form-dept {
-    @apply w-[50%] h-[100vh] pt-[2rem]  pl-[1.5rem] 
 }
 
-.back{
-    @apply text-[#3e413e] text-[1.4rem] flex flex-row
+.form-dept {
+    @apply w-[50%] h-[100vh] pt-[9rem] pl-[0rem] bg-gradient-to-b from-[white] to-[#b4e7b4] flex justify-center flex-col overflow-y-auto overflow-x-hidden
+}
+
+.back {
+    @apply cursor-pointer text-[#3e413e] text-[1.4rem] flex flex-row ml-[2rem] mb-[2rem]
+}
+
+.current-view {
+    @apply flex justify-center 
 }
 
 @media (max-width: 767px) {
 
-    .image2{
+    .current-view {
+        @apply flex justify-center h-[100vh] 
+    }
+    
+    .back {
+        @apply text-[#3e413e] text-[1.4rem] flex flex-row ml-[2rem] mb-[0rem]
+    }
+
+    .image2 {
         @apply hidden
     }
 
     .form-dept {
-        @apply w-[100vw] h-auto pt-[2rem]  pl-[0rem]  
+        @apply w-[100vw] h-[100vh] pl-[0rem] pt-[8rem] bg-red-600 
     }
 
     .registration-comp {
@@ -34,5 +46,12 @@
 
     .forms {
         @apply flex pt-[1rem] flex-col pl-[0rem] justify-center items-center
-     }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .image2 {
+        @apply w-[45%] h-[100%]
+    }
+
 }
