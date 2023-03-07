@@ -76,17 +76,17 @@ const UnitReg = () => {
 
                     <div className="unit-cont">
                         <p className="unit-label"> Unit name*</p>
-                        <input value={unitName} required onChange={handleUnitName} placeholder='E.g Jane Doe' type="text" className="unit-input" />
+                        <input value={unitName} required onChange={handleUnitName} placeholder='E.g Mandate Unit' type="text" className="unit-input" />
                     </div>
 
                     <div className="unit-cont">
                         <p className="unit-label">Unit number*</p>
-                        <input value={unitNumber} required onChange={handleUnitNumber} placeholder='E.g 080XXXXXXXX' type="tel" className="unit-input" />
+                        <input value={unitNumber} required onChange={handleUnitNumber} placeholder='E.g 112' type="tel" className="unit-input" />
                     </div>
 
                     <div className="unit-cont">
                         <p className="unit-label">Unit Address*</p>
-                        <input value={address} required onChange={handleAddress} placeholder='E.g 723974008EG' type="num" className="unit-input" />
+                        <input value={address} required onChange={handleAddress} placeholder='E.g Taiwo road' type="num" className="unit-input" />
                     </div>
 
                     {/* calling the handleSubmit function in the button and checking if the input elements are filled before activating button */}

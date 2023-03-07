@@ -49,19 +49,6 @@ const Home = () => {
                         <Link to="/registration" className='glow-button' >Register now</Link>
                     </div>
 
-                    <div className="section2">
-                        {/* <div className="image-container">
-                            <img src={josh}  className="your-name" alt="Your image" />
-
-                            <img src={josh}  className="your-name" alt="Your image" />
-
-                            <img src={josh}  className="your-name" alt="Your image" />
-
-                        </div> */}
-
-                    </div>
-
-
                 </div>
             </Parallax>
 

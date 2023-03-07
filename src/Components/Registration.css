@@ -37,7 +37,7 @@
     }
 
     .form-dept {
-        @apply w-[100vw] h-[100vh] pl-[0rem] pt-[8rem] bg-red-600 
+        @apply w-[100vw] h-[100vh] pl-[0rem] pt-[8rem]
     }
 
     .registration-comp {

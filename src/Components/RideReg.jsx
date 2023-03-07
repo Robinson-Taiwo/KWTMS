@@ -199,7 +199,7 @@ const RideReg = () => {
                     {/* calling the handleSubmit function in the button and checking if the input elements are filled before activating button */}
 
                     <button disabled={!name || !number || !idNumber || !chasesNumber || !selectedOption || !selectedRegistration || !selectedOwnership || !image} onClick={handleSubmit} className="ride-button">
-                        submit Data
+                        Submit Data
                     </button>
 
                 </form>
