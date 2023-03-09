@@ -6,6 +6,7 @@ import Onboarding from './Onboarding';
 import RideReg from "./RideReg"
 import UnitReg from "./UnitReg"
 import "./Registration.css"
+import { Link } from 'react-router-dom';
 
 
 const Registration = () => {
@@ -29,11 +30,26 @@ const Registration = () => {
             <img src={ima} alt="" className="image2" />
 
             <div className="form-dept">
-
+                {/* 
                 <p onClick={() => setView("ONBOARDING")} className="back">
                     <img src={nav} alt="" className="nav" />
                     back
-                </p>
+                    
+                </p> */}
+
+                {
+                    view === "ONBOARDING" ? (
+                        <Link to="/" className="back">
+                            <img src={nav} alt="" className="nav" />
+                            back
+
+                        </Link>) : (
+                        <p onClick={() => setView("ONBOARDING")} className="back">
+                            <img src={nav} alt="" className="nav" />
+                            back
+
+                        </p>)
+                }
 
                 <div className="current-view">
                     <CurrentView setView={setView} />

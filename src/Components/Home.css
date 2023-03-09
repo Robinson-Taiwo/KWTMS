@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700;800&family=Shantell+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
     /* overflow: hidden; */
-
     scroll-behavior: smooth
 }
 
@@ -22,7 +23,22 @@
 }
 
 .navbar {
-    @apply h-[5rem] w-[100vw] bg-[#48b87a] flex flex-row items-center
+    @apply h-[5rem] w-[100vw] bg-[#48b87a] flex flex-row items-center justify-between
+}
+
+.nav1 {
+    @apply flex flex-row h-[100%] items-center
+}
+
+.contact {
+    box-shadow: 0 0 10px green;
+    transition: box-shadow 0.3s ease-in-out;
+    @apply mr-[4rem] h-[80%] w-[11rem] bg-[white] items-center flex justify-center rounded-[1.5rem] text-[green] font-semibold text-[1.2rem]
+}
+
+.contact:hover {
+    box-shadow: 0 0 20px white;
+
 }
 
 .logo {
@@ -51,7 +67,7 @@ strong {
 }
 
 .main-texts {
-    @apply text-[2rem] leading-[1.2] w-[60.5rem] mt-[2rem] text-[#bee7be] pl-[4rem]
+    @apply text-[2rem] leading-[2.4] w-[60.5rem] mt-[2rem] text-[#bee7be] pl-[4rem]
 }
 
 .glow-button {
@@ -90,16 +106,17 @@ strong {
 }
 
 .second-sectT {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    @apply w-[60%] text-[2.5rem] leading-[4rem] font-medium
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Shantell Sans', cursive;
+    @apply w-[60%] text-[2rem] leading-[4rem] font-medium
 }
 
 
 .sect2-h {
-    background: linear-gradient(to right, #ffffff, #619c7a) no-repeat;
+    background: linear-gradient(to right, #ffffff, #1a1b1b) no-repeat;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    @apply text-[4rem] leading-[5rem] mb-[2rem] font-bold
+    @apply text-[4rem] leading-[7rem] mb-[2rem] font-bold
 }
 
 /* .layer2{
@@ -128,9 +145,166 @@ strong {
 }
 
 
-.fourth-sect{
-    @apply h-[100vh] bg-cover bg-center bg-no-repeat
+.fourth-sect {
+    @apply h-[50vh] bg-cover bg-center px-[9rem] py-[3rem] flex flex-row items-center gap-[1rem] justify-between
 }
+
+.alarm {
+    @apply h-[25rem] w-[25rem] ml-[3rem]
+}
+
+.report {
+    @apply text-[5rem] leading-[5rem] font-bold text-[green]
+}
+
+.report-text {
+    @apply w-[40rem] flex-wrap text-[2rem] mt-[1.5rem] leading-[3rem] text-center
+}
+
+.fourth-sect1 {
+    @apply justify-center items-center flex flex-col mr-[9rem]
+}
+
+.glow-button1 {
+    background-color: green;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    width: 18rem;
+    height: 4rem;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 0 0 10px green;
+    transition: box-shadow 0.3s ease-in-out;
+    @apply flex justify-center items-center mt-[2rem]
+}
+
+.glow-button1:hover {
+    box-shadow: 0 0 20px green;
+}
+
+
+.fifth-sect {
+    animation: slide 30s linear infinite;
+    /* background: linear-gradient(to right, #ffffff, #72cfcf) no-repeat; */
+    /* background-size: cover; */
+    /* background-image: url(../assets/black.jpg); */
+    height: 80vh;
+    width: 100%;
+    @apply flex justify-center items-center flex-row mb-[4rem]
+}
+
+.fifth-sect2 {
+    @apply w-[50%] bg-[white] h-[100%] flex flex-col justify-center items-center
+}
+
+.spw {
+    @apply text-[1.5rem] mt-[2rem]
+}
+
+.fifth-sect3 {
+    @apply w-[50%] bg-[#2ecc71] h-[100%] rounded-l-[2rem] flex flex-col justify-center items-center
+}
+
+/* .slider{
+    @apply bg-[black] h-[40rem] w-[50rem]
+}
+
+
+.slider-in{
+    @apply bg-[white]  h-[39rem] w-[39rem]
+} */
+
+.white {
+    @apply pl-[2rem] pt-[2rem]
+}
+
+.green {
+    @apply pl-[2rem]
+}
+
+.keke {
+    @apply h-[20rem] w-[20rem]
+}
+
+.kekel {
+    @apply w-[100%]
+}
+
+.sp {
+    @apply mt-[4rem] text-[1.5rem] text-[white]
+}
+
+.taxi {
+    @apply h-[20rem] w-[20rem]
+}
+
+.okada {
+    @apply h-[20rem] w-[20rem]
+}
+
+.bike {
+    @apply flex flex-col mt-[2rem] justify-center text-center
+}
+
+.sh {
+    @apply text-[3rem] font-bold text-[white] mt-[2rem]
+}
+
+.spw {
+    @apply mt-[2rem] text-[green]
+}
+
+.shw {
+    @apply text-[3rem] font-bold text-[green]
+}
+
+
+.footer {
+    @apply bg-gradient-to-r from-[#d2eed3] to-[#b4e7b4] h-[40vh] p-[5rem] flex flex-row justify-between
+}
+
+.drop {
+    @apply text-[2.5rem] leading-[3.3rem] mb-[1rem]
+}
+
+.us {
+    @apply flex flex-col w-[50rem]
+}
+
+.email {
+    @apply w-[50rem] h-[5rem] rounded-[1rem]
+}
+
+.push {
+    @apply w-[20rem] h-[4rem] mt-[1.5rem] bg-[green] rounded-[2rem] text-[1.5rem]
+}
+
+.compo {
+    @apply flex justify-between flex-col
+}
+
+.compo p {
+    @apply text-[1.5rem]
+}
+
+.compo div {
+    @apply text-[3rem] font-bold
+}
+
+.copyRight {
+    @apply items-end flex text-[2rem] font-bold
+}
+
+.footer2 {
+    @apply flex flex-row gap-[3rem]
+}
+
+
+
+/* ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+hjkjnjkk
+ss */
 
 
 
@@ -147,6 +321,21 @@ strong {
 
     .navbar {
         @apply h-[5rem] w-[100%] bg-[#48b87a] flex flex-row items-center
+    }
+
+    .nav1 {
+        @apply flex flex-row h-[100%] items-center
+    }
+
+    .contact {
+        box-shadow: 0 0 10px green;
+        transition: box-shadow 0.3s ease-in-out;
+        @apply mr-[4rem] h-[80%] w-[11rem] bg-[white] items-center flex justify-center rounded-[1.5rem] text-[green] font-semibold text-[1.2rem] hidden
+    }
+
+    .contact:hover {
+        box-shadow: 0 0 20px white;
+
     }
 
     .logo {
@@ -197,7 +386,6 @@ strong {
     }
 
 
-
     .section2 {
         @apply mr-[20rem] hidden
     }
@@ -214,7 +402,8 @@ strong {
     }
 
     .second-sectT {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-family: 'Kumbh Sans', sans-serif;
+        font-family: 'Shantell Sans', cursive;
         @apply w-[100%] text-[1.2rem] leading-[2rem] font-medium pb-[2rem]
     }
 
@@ -223,7 +412,7 @@ strong {
         background: linear-gradient(to right, #ffffff, #eaeeeb) no-repeat;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        @apply text-[2rem] h-auto leading-[4rem] pb-[2rem] font-bold mt-[2rem]
+        @apply text-[2rem] h-auto leading-[6rem] pb-[2rem] font-bold mt-[2rem]
     }
 
     /* .layer2{
@@ -250,5 +439,400 @@ strong {
     .card-p {
         @apply text-[1.7rem] leading-[1.7rem] text-center pb-[1rem]
     }
+
+
+    .fourth-sect {
+        @apply h-auto bg-cover bg-center px-[2rem] py-[2rem] flex flex-col items-center gap-[1rem] justify-center
+    }
+
+    .alarm {
+        @apply h-[15rem] w-[15rem] ml-[0rem]
+    }
+
+    .report {
+        @apply text-[2rem] leading-[3rem] font-bold text-[green]
+    }
+
+    .report-text {
+        @apply w-[100%] flex-wrap text-[1.5rem] mt-[1.5rem] leading-[3rem] text-center
+    }
+
+    .fourth-sect1 {
+        @apply justify-center items-center flex flex-col mr-[1rem]
+    }
+
+    .glow-button1 {
+        background-color: green;
+        border: none;
+        color: #fff;
+        padding: 10px 20px;
+        width: 18rem;
+        height: 4rem;
+        border-radius: 5px;
+        font-size: 18px;
+        box-shadow: 0 0 10px green;
+        transition: box-shadow 0.3s ease-in-out;
+        @apply flex justify-center items-center mt-[2rem]
+    }
+
+    .glow-button1:hover {
+        box-shadow: 0 0 20px green;
+    }
+
+    /* 
+    .fifth-sect {
+        @apply bg-center bg-cover h-[70vh]
+    } */
+
+
+
+    .fifth-sect {
+        animation: slide 30s linear infinite;
+        height: auto;
+        width: 100%;
+        @apply flex justify-center items-center flex-col mb-[4rem] px-[2rem]
+    }
+
+    .fifth-sect2 {
+        @apply w-[100%] bg-[white] h-[100%] flex flex-col justify-center items-center
+    }
+
+    .spw {
+        @apply text-[1.2rem] mt-[2rem] flex text-center flex-wrap leading-[1.5rem]
+    }
+
+    .fifth-sect3 {
+        @apply w-[100%] bg-[#2ecc71] h-[100%] rounded-l-[2rem] flex flex-col justify-center items-center
+    }
+
+    .white {
+        @apply pl-[0rem] pt-[2rem]
+    }
+
+    .green {
+        @apply pl-[0rem]
+    }
+
+    .keke {
+        @apply h-[20rem] w-[20rem]
+    }
+
+    .kekel {
+        @apply w-[100%] justify-center text-center
+    }
+
+    .sp {
+        @apply mt-[2rem] text-[1.5rem] text-[white] items-center text-center
+    }
+
+    .taxi {
+        @apply h-[20rem] w-[20rem] flex justify-center items-center text-center
+    }
+
+    .okada {
+        @apply h-[20rem] w-[20rem]
+    }
+
+    .bike {
+        @apply flex flex-col mt-[2rem] justify-center text-center
+    }
+
+    .sh {
+        @apply text-[2rem] leading-[2rem] font-bold text-[white] mt-[2rem]
+    }
+
+    .spw {
+        @apply mt-[1rem] text-[green] mb-[2rem]
+    }
+
+    .shw {
+        @apply text-[2rem] font-bold text-[green] leading-[2rem]
+    }
+
+    .footer {
+        @apply bg-gradient-to-r from-[#d2eed3] to-[#b4e7b4] h-auto flex flex-col w-auto pl-[0rem] justify-center
+    }
+
+    .drop {
+        @apply text-[1.9rem] leading-[3.3rem] mb-[1rem]
+    }
+
+    .us {
+        @apply flex flex-col h-[100%] pl-[1rem]
+    }
+
+    .email {
+        @apply w-[20rem] h-[5rem] rounded-[1rem] h-[2.5rem] w-[20rem]
+    }
+
+    .push {
+        @apply w-[20rem] h-[4rem] w-[5ren] mt-[1.5rem] bg-[green] rounded-[2rem] text-[1.5rem]
+    }
+
+    .compo {
+        @apply flex flex-col mt-[2rem] w-[2ren] w-[20rem]
+    }
+
+    .compo p {
+        @apply text-[1.5rem]
+    }
+
+    .compo div {
+        @apply text-[1.8rem] font-semibold
+    }
+
+    .copyRight {
+        @apply text-[1.4rem] font-bold
+    }
+
+    .footer2 {
+        @apply flex flex-col gap-[2rem] pl-[2rem]
+    }
+
+
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+
+    first-sect {
+        background: radial-gradient(30.56% 76.04% at 72.78% 14.44%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+        @apply bg-center bg-cover bg-no-repeat h-[90vh] w-[100vw] px-[3rem] flex items-center flex-col justify-center
+    }
+
+
+    .navbar {
+        @apply h-[5rem] w-[100%] bg-[#48b87a] flex flex-row items-center
+    }
+
+    .nav1 {
+        @apply flex flex-row h-[100%] items-center
+    }
+
+    .contact {
+        box-shadow: 0 0 10px green;
+        transition: box-shadow 0.3s ease-in-out;
+        @apply mr-[4rem] h-[80%] w-[11rem] bg-[white] items-center flex justify-center rounded-[1.5rem] text-[green] font-semibold text-[1.2rem]
+    }
+
+    .contact:hover {
+        box-shadow: 0 0 20px white;
+
+    }
+
+    .logo {
+        @apply h-[4rem] flex items-center pl-[2rem]
+    }
+
+    .logo-text {
+        /* font-size: 20px; */
+        /* color: blue; */
+
+        text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+        @apply text-[3.3rem] h-[100%] items-center flex font-bold text-[#48b87a]
+    }
+
+    .big-header {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        @apply text-[4rem] text-center leading-[5rem] text-[white] font-bold w-[100%]
+    }
+
+    .section1 {
+        @apply w-[100%] flex flex-col
+    }
+
+    strong {
+        @apply text-[#79bd79]
+    }
+
+    .main-texts {
+        @apply text-[2rem] leading-[2.4rem] w-[100%] mt-[2rem] text-[#bee7be] pl-[0rem] text-center
+    }
+
+    .glow-button {
+        background-color: green;
+        border: none;
+        color: #fff;
+        padding: 10px 20px;
+        width: 18rem;
+        height: 4rem;
+        border-radius: 5px;
+        font-size: 18px;
+        box-shadow: 0 0 10px green;
+        transition: box-shadow 0.3s ease-in-out;
+        @apply flex justify-center items-center self-center mt-[2rem] ml-[0rem]
+    }
+
+    .glow-button:hover {
+        box-shadow: 0 0 20px green;
+    }
+
+
+    .section2 {
+        @apply mr-[20rem] hidden
+    }
+
+    .your-name {
+        border-radius: 50%;
+        @apply h-[20rem] w-[20rem]
+    }
+
+    .second-sect {
+        background: linear-gradient(135deg, #2ecc71, #2ecc71 50%, #fff 50%, #fff);
+
+        @apply h-auto pb-[2rem] px-[1rem] items-center justify-center flex-col flex text-center
+    }
+
+    .second-sectT {
+        font-family: 'Kumbh Sans', sans-serif;
+        font-family: 'Shantell Sans', cursive;
+        @apply w-[100%] text-[2.4rem] leading-[4rem] font-medium pb-[2rem]
+    }
+
+
+    .sect2-h {
+        background: linear-gradient(to right, #ffffff, #eaeeeb) no-repeat;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @apply text-[4rem] h-auto leading-[7rem] pb-[2rem] font-bold mt-[2rem]
+    }
+
+    /* .layer2{
+        border-radius: 4%;
+        @apply bg-[white] h-[98%] w-[99%] 
+    } */
+
+    .third-sect {
+        background: linear-gradient(135deg, #fff, #fff 50%, #2ecc71 50%, #2ecc71);
+        @apply h-auto pb-[3rem] flex flex-col items-center justify-between px-[2rem]
+    }
+
+    .card {
+        box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.25);
+        border-radius: 2rem;
+
+        @apply bg-[white] h-[25rem] w-[25rem] mt-[7rem] flex items-center flex-col justify-center gap-[2rem] p-[2rem]
+    }
+
+    .num {
+        @apply text-[4rem] pb-[1.5rem] leading-[4rem] pt-[1rem] font-bold text-[green]
+    }
+
+    .card-p {
+        @apply text-[1.7rem] leading-[3rem] text-center pb-[1rem]
+    }
+
+
+    .fourth-sect {
+        @apply h-auto bg-cover bg-center px-[2rem] py-[2rem] flex flex-col items-center gap-[1rem] justify-center
+    }
+
+    .alarm {
+        @apply h-[25rem] w-[25rem] ml-[0rem]
+    }
+
+    .report {
+        @apply text-[5rem] leading-[5rem] font-bold text-[green]
+    }
+
+    .report-text {
+        @apply w-[100%] flex-wrap text-[2rem] mt-[1.5rem] leading-[3rem] text-center
+    }
+
+    .fourth-sect1 {
+        @apply justify-center items-center flex flex-col mr-[1rem]
+    }
+
+    .glow-button1 {
+        background-color: green;
+        border: none;
+        color: #fff;
+        padding: 10px 20px;
+        width: 18rem;
+        height: 4rem;
+        border-radius: 5px;
+        font-size: 18px;
+        box-shadow: 0 0 10px green;
+        transition: box-shadow 0.3s ease-in-out;
+        @apply flex justify-center items-center mt-[2rem]
+    }
+
+    .glow-button1:hover {
+        box-shadow: 0 0 20px green;
+    }
+
+    /* 
+    .fifth-sect {
+        @apply bg-center bg-cover h-[70vh]
+    } */
+
+
+
+    .fifth-sect {
+        animation: slide 30s linear infinite;
+        height: auto;
+        width: 100%;
+        @apply flex justify-center items-center flex-col mb-[4rem] px-[2rem]
+    }
+
+    .fifth-sect2 {
+        @apply w-[100%] bg-[white] h-[100%] flex flex-col justify-center items-center
+    }
+
+    .spw {
+        @apply text-[1.5rem] mt-[2rem] flex text-center flex-wrap leading-[1.5rem]
+    }
+
+    .fifth-sect3 {
+        @apply w-[100%] bg-[#2ecc71] h-[100%] rounded-l-[2rem] flex flex-col justify-center items-center
+    }
+
+    .white {
+        @apply pl-[0rem] pt-[2rem] w-[100%] justify-center flex
+    }
+
+    .green {
+        @apply pl-[0rem]
+    }
+
+    .keke {
+        @apply h-[20rem] w-[20rem]
+    }
+
+    .kekel {
+        @apply w-[50%] justify-center text-center
+    }
+
+    .sp {
+        @apply mt-[2rem] text-[1.5rem] text-[white] items-center text-center
+    }
+
+    .taxi {
+        @apply h-[20rem] w-[20rem] flex justify-center items-center text-center
+    }
+
+    .okada {
+        @apply h-[20rem] w-[20rem]
+    }
+
+    .bike {
+        @apply flex flex-col justify-center text-center w-[50%]
+    }
+
+    .sh {
+        @apply text-[2rem] leading-[2rem] font-bold text-[white] mt-[2rem]
+    }
+
+    .spw {
+        @apply mt-[1rem] text-[green] mb-[2rem] text-[1.5rem]
+    }
+
+    .shw {
+        @apply text-[2rem] font-bold text-[green] leading-[2rem]
+    }
+
 
 }

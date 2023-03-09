@@ -2,17 +2,23 @@ import React from 'react'
 import { Parallax } from 'react-parallax'
 import { Link } from 'react-router-dom'
 import ayo from "../assets/ayo.jpg"
+// import black from "../assets/black.jpg"
 import josh from "../assets/josh.jpg"
 import data from "../Components/data"
 import logo from "../assets/logo.svg"
+import keke from "../assets/keke.svg"
+import bike from "../assets/okada.svg"
+import taxi from "../assets/taxi.svg"
+import alarm from "../assets/alarm.svg"
 import "./Home.css"
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+
+
+
 const responsive = {
     superLargeDesktop: {
         // the naming can be any, depends on you.
         breakpoint: { max: 4000, min: 3000 },
-        items: 5
+        items: 3
     },
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
@@ -32,8 +38,14 @@ const Home = () => {
     return (
         <div className='home'>
             <nav className='navbar'>
-                <img src={logo} alt="" className="logo" />
-                <h2 className="logo-text"> KWTMS</h2>
+                <div className="nav1">
+                    <img src={logo} alt="" className="logo" />
+                    <h2 className="logo-text"> KWTMS</h2>
+                </div>
+
+                <a href='#contact' className="contact">
+                    Contact us
+                </a>
             </nav>
             <Parallax strength={200} bgImage={ayo}>
                 <div className="first-sect">
@@ -79,13 +91,54 @@ const Home = () => {
                     )
                 })}
             </div>
-            {/* 
-            <Parallax bgImage={josh} strength={300}>
-                <div className="fourth-sect">
+
+            <div className="fourth-sect">
+
+                <img src={alarm} alt="" className="alarm" />
+
+                <div className="fourth-sect1">
+                    <h1 className='report'>Report vehicles</h1>
+                    <p className="report-text">
+                        where you can report details of transport workers in your state. This is a vital tool in maintaining safety on our roads, improving revenue generation for the government, and ensuring the safety of both drivers and passengers.
+
+                    </p>
+                    <Link to="/report" className='glow-button1'>
+                        Report Vehicle
+                    </Link>
+                </div>
+
+
+
+            </div>
+
+            <section className="fifth-sect">
+
+                <div className="fifth-sect2">
+
+                    <div className="white">
+                        <div className="kekel">
+                            <img src={keke} alt="" className="keke" />
+                            <h1 className='shw' >Tricycle/Napep</h1>
+                            <p className='spw' >Registration And Confirmation Of Tricycle Riders</p>
+
+                        </div>
+
+                        <div className="bike">
+                            <img src={bike} alt="" className="okada" />
+                            <h1 className='shw' >BIKE RIDERS/LOGISTICS</h1>
+                            <p className='spw' >Registration And Confirmation Of Bike/ Logistics Riders</p>
+                        </div>
+                    </div>
 
                 </div>
-            </Parallax> */}
+                <div className="fifth-sect3">
+                    <img src={taxi} alt="" className="taxi" />
+                    <h1 className='sh' >Taxi</h1>
+                    <p className='sp' >Registration And Confirmation of Taxi Drivers</p>
+                </div>
+            </section>
 
+    
 
 
 
