@@ -422,7 +422,7 @@ ss */
 
     .third-sect {
         background: linear-gradient(135deg, #fff, #fff 50%, #2ecc71 50%, #2ecc71);
-        @apply h-auto flex flex-col items-center justify-between px-[2rem]
+        @apply h-auto flex flex-col items-center pb-[3rem] justify-between px-[2rem]
     }
 
     .card {
@@ -510,7 +510,7 @@ ss */
     }
 
     .green {
-        @apply pl-[0rem]
+        @apply pl-[0rem] pb-[2rem]
     }
 
     .keke {
