@@ -5,9 +5,15 @@ const Report = () => {
     return (
         <div className='Report'>
 
-            <div className="Report-head">
-                Report
-            </div>
+            <h1 className='Report-head' >
+                Report Vehicle and Road Incidence
+            </h1>
+
+            <section className="Report-body">
+
+                
+
+            </section>
 
         </div>
     )

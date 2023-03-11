@@ -1,3 +1,14 @@
 .Report {
-    @apply h-[100vh] w-[100vw]
+    @apply h-[100vh] w-[100vw] flex items-center flex-col p-[3rem] bg-gradient-to-b from-[white] to-[#b4e7b4]
 }
+
+.Report-head {
+    @apply text-[3rem] leading-[3.5rem] font-bold text-[#517e51]
+}
+
+.Report-body {
+    border: 2px solid rgb(67, 165, 42);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    @apply w-[70%] h-[90%] mt-[2rem] bg-[white] rounded-[1rem]
+}
+

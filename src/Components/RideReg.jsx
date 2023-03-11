@@ -53,6 +53,9 @@ const RideReg = () => {
             console.log("Please fill in all required fields");
         }
         // Here you can store the data in a state management library like Redux, or send it to an API endpoint
+
+        alert("Thanks for your submission")
+
     };
 
 
