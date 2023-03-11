@@ -138,7 +138,41 @@ const Home = () => {
                 </div>
             </section>
 
-    
+            <footer className="footer">
+                <div className="footer-top">
+                    <img src={logo} alt="" className="footer-logo" />
+
+                    <div className="footer-top-right">
+                        <Link className='footer-link' to="/registration">Register</Link>
+                        <Link className='footer-link' to="/report">Report</Link>
+
+                    </div>
+
+                </div>
+                <div className="middle">
+                    <div className="mddle-left">
+                        <h1 className="middle-left-head">
+                            Suscribe to our newsletter to get latest update
+                        </h1>
+                    </div>
+
+                    <div className="middle-right">
+                        <input type="text" placeholder='input your email' className="email" />
+                        <button className="drop">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+
+                <div id='contact' className="footer-bottom">
+
+                    <h1 className="contact-us">
+                        Contact us here:
+                    </h1>
+                </div>
+
+            </footer>
+
 
 
 

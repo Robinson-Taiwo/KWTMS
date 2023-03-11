@@ -3,7 +3,13 @@ import "./Report.css"
 
 const Report = () => {
     return (
-        <div>Report</div>
+        <div className='Report'>
+
+            <div className="Report-head">
+                Report
+            </div>
+
+        </div>
     )
 }
 

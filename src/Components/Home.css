@@ -260,7 +260,7 @@ strong {
 }
 
 
-.footer {
+/* .footer {
     @apply bg-gradient-to-r from-[#d2eed3] to-[#b4e7b4] h-[40vh] p-[5rem] flex flex-row justify-between
 }
 
@@ -299,6 +299,70 @@ strong {
 .footer2 {
     @apply flex flex-row gap-[3rem]
 }
+ */
+
+.footer {
+    @apply bg-[#6ab86a] h-auto w-[100vw] p-[3rem]
+}
+
+
+.footer-logo {
+    @apply h-[10rem] w-[10rem]
+}
+
+.footer-top {
+    @apply flex flex-row justify-between items-center px-[4rem] mb-[1rem]
+}
+
+.footer-top-right {
+    @apply gap-[5rem] flex
+}
+
+.footer-link {
+    @apply text-[1.5rem] text-[white] font-medium leading-[3rem]
+}
+
+.middle {
+    @apply flex flex-row justify-between px-[4rem] h-[23rem] items-center bg-[#4aaf4a] rounded-[2rem] mb-[2rem]
+}
+
+.middle-left-head {
+    @apply text-[2.5rem] text-[white] leading-[3.4rem] w-[35rem] flex-wrap flex text-center font-bold
+}
+
+
+.email {
+    @apply w-[27rem] h-[5rem] opacity-70 text-[1.6rem] p-[2rem] rounded-[1rem]
+}
+
+.middle-right {
+    @apply flex gap-[3rem] items-center flex-col
+}
+
+.drop {
+    background-color: green;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    width: 18rem;
+    height: 4rem;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 0 0 10px green;
+    transition: box-shadow 0.3s ease-in-out;
+    @apply flex justify-center items-center ml-[0rem]
+}
+
+.drop-button:hover {
+    box-shadow: 0 0 20px green;
+
+}
+
+.contact-us {
+    @apply text-[1.8rem] text-[white] p-[2rem]
+}
+
+
 
 
 
@@ -549,7 +613,7 @@ ss */
         @apply text-[2rem] font-bold text-[green] leading-[2rem]
     }
 
-    .footer {
+    /* .footer {
         @apply bg-gradient-to-r from-[#d2eed3] to-[#b4e7b4] h-auto flex flex-col w-auto pl-[0rem] justify-center
     }
 
@@ -587,6 +651,72 @@ ss */
 
     .footer2 {
         @apply flex flex-col gap-[2rem] pl-[2rem]
+    } */
+
+
+    .footer {
+        @apply bg-[#6ab86a] h-auto w-[100vw] p-[1rem] flex flex-col
+    }
+
+
+    .footer-logo {
+        @apply h-[10rem] w-[10rem]
+    }
+
+    .footer-top {
+        @apply flex flex-col justify-between items-center px-[4rem] mb-[1rem]
+    }
+
+    .footer-top-right {
+        @apply gap-[1.6rem] flex
+    }
+
+    .footer-link {
+        @apply text-[1.5rem] text-[white] font-medium leading-[3rem]
+    }
+
+    .middle {
+        @apply flex flex-col justify-center px-[0rem] items-center bg-[#4aaf4a] rounded-[2rem] mb-[0.5rem] h-auto p-[3rem]
+    }
+
+    .middle-left-head {
+        @apply text-[2rem] text-[white] leading-[2.3rem] flex-wrap flex text-center font-bold w-[100%]
+    }
+
+
+    .email {
+        @apply w-[20rem] h-[1rem] opacity-70 text-[1.6rem] p-[2rem] rounded-[1rem] mt-[1rem]
+    }
+
+    .middle-right {
+        @apply flex gap-[1rem] items-center flex-col
+    }
+
+    .drop {
+        background-color: green;
+        border: none;
+        color: #fff;
+        padding: 10px 20px;
+        width: 18rem;
+        height: 4rem;
+        border-radius: 5px;
+        font-size: 1rem;
+        box-shadow: 0 0 10px green;
+        transition: box-shadow 0.3s ease-in-out;
+        @apply flex justify-center items-center ml-[0rem]
+    }
+
+    .drop-button:hover {
+        box-shadow: 0 0 20px green;
+
+    }
+
+    .contact-us {
+        @apply text-[1.8rem] text-[white] p-[2rem]
+    }
+
+    .footer-bottom {
+        @apply flex flex-col w-[100%] justify-center items-center
     }
 
 
@@ -833,6 +963,74 @@ ss */
     .shw {
         @apply text-[2rem] font-bold text-[green] leading-[2rem]
     }
+
+
+
+    .footer {
+        @apply bg-[#6ab86a] h-auto w-[100vw] p-[1rem] flex flex-col
+    }
+
+
+    .footer-logo {
+        @apply h-[10rem] w-[10rem]
+    }
+
+    .footer-top {
+        @apply flex flex-col justify-between items-center px-[4rem] mb-[1rem]
+    }
+
+    .footer-top-right {
+        @apply gap-[1.6rem] flex
+    }
+
+    .footer-link {
+        @apply text-[1.5rem] text-[white] font-medium leading-[3rem]
+    }
+
+    .middle {
+        @apply flex flex-col justify-center px-[0rem] items-center bg-[#4aaf4a] rounded-[2rem] mb-[0.5rem] h-auto p-[3rem]
+    }
+
+    .middle-left-head {
+        @apply text-[2rem] text-[white] leading-[2.3rem] flex-wrap flex text-center font-bold w-[100%]
+    }
+
+
+    .email {
+        @apply w-[20rem] h-[1rem] opacity-70 text-[1.6rem] p-[2rem] rounded-[1rem] mt-[1rem] mb-[1rem]
+    }
+
+    .middle-right {
+        @apply flex gap-[1rem] items-center flex-col
+    }
+
+    .drop {
+        background-color: green;
+        border: none;
+        color: #fff;
+        padding: 10px 20px;
+        width: 18rem;
+        height: 4rem;
+        border-radius: 5px;
+        font-size: 1rem;
+        box-shadow: 0 0 10px green;
+        transition: box-shadow 0.3s ease-in-out;
+        @apply flex justify-center items-center ml-[0rem]
+    }
+
+    .drop-button:hover {
+        box-shadow: 0 0 20px green;
+
+    }
+
+    .contact-us {
+        @apply text-[1.8rem] text-[white] p-[2rem]
+    }
+
+    .footer-bottom {
+        @apply flex flex-col w-[100%] justify-center items-center
+    }
+
 
 
 }
